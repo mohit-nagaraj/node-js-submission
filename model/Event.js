@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose"
 
+// Define the schema
 const eventSchema = new Schema({
     name: {
         type: String,
