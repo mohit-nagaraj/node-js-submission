@@ -1,9 +1,8 @@
 import { Router } from "express"
+import { addEvent } from "../controllers/eventController.js"
 
 const eventRouter = Router()
 
-eventRouter.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+eventRouter.post('/create', addEvent)
 
 export default eventRouter
